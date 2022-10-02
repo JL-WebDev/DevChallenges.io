@@ -1,0 +1,175 @@
+:root {
+    --main-color: #333;
+    --secondary-color: #555;
+}
+
+body {
+    padding: 100px;
+}
+
+.top-panel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    padding-left: 24px;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.introduction {
+    padding-right: 24px;
+}
+
+.introduction h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.introduction p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 450px;
+}
+
+.team-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    position: relative;
+    width: 25%;
+    padding: 12px;
+    margin: 40px 20px;
+}
+
+.team-presentation div:nth-of-type(2) {
+    position: relative;
+    top: 100px;
+}
+
+.team-presentation div:nth-of-type(5) {
+    position: relative;
+    top: 100px;
+
+}
+
+.team-member .member-photo {
+    width: 100%;
+    box-shadow: 2px 2px 15px 4px #000;
+
+}
+
+.team-member .member-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    color: var(--main-color);
+}
+
+.team-member .member-job {
+    font-family: 'PT Serif', serif;
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    right: -25px;
+    top: 12px
+}
+
+@media screen and (max-width: 1440px) {
+    .top-panel {
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .introduction p {
+        max-width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 985px) {
+    .top-panel {
+        flex-direction: column;
+    }
+
+    .introduction {
+        padding-left: 24px;
+    }
+
+    .introduction h2 {
+        margin: 0;
+    }
+
+    .introduction p {
+        max-width: max-content;
+        margin: 8px 0 0;
+    }
+
+    .team-member {
+        width: 40%;
+    }
+
+    .team-presentation div:nth-of-type(2) {
+        position: inherit;
+
+    }
+
+    .team-presentation div:nth-of-type(5) {
+        position: inherit;
+
+    }
+
+    .team-presentation div:nth-of-type(2n) {
+        position: relative;
+        top: 100px;
+
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    body {
+        padding: 40px;
+    }
+
+    .team-presentation {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .team-member {
+        width: 100%;
+    }
+
+    .team-presentation div:nth-of-type(2n) {
+        position: relative;
+        left: 0;
+        top: 0px;
+    }
+
+    .team-presentation div:nth-of-type(2n+1) {
+        position: relative;
+        right: 0;
+        top: 0px;
+
+    }
+}
