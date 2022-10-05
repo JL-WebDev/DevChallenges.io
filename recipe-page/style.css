@@ -71,7 +71,7 @@ h3{
 .ingredient-container{
     grid-column: 1/1;
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 2.25rem 1fr;
     column-gap: 20px;
     justify-items: center;
     /* align-items: center; */
@@ -110,19 +110,17 @@ h3{
 }
 
 .stage-number{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 24px;
     background-color:#F2994A ;
     color: white;
-    height: 36px;
-    margin: 2px;
-    text-align: center;
+    height: 2.25rem;
+    width: 2.25rem;
     border-radius: 4px;
-    align-content: center;
-    box-sizing: border-box;
-    
-    
 }
 
 .stage-instruction{
